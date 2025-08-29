@@ -54,3 +54,11 @@ bind    =   $Alt,       PRINT,  exec,   /bin/bash -c /System/Applications/Screen
 bind    =   $Shift,     PRINT,  exec,   $Terminal /System/Applications/Screenshot/Video.sh
 bind    =   $System,    PRINT,  exec,   thunar $(cat /System/Configuration/Adellian/Screenshot_Path.txt)$(date +%Y-%m)
 ```
+
+<br>
+
+<h4 align=right>
+  <a href="https://github.com/Ascellayn/Adellian/blob/main/Install-Scripts/Applications/Screenshot.sh">
+    The Adellian Installer Script for this Application can be found here.
+  </a>
+</h4>
