@@ -10,7 +10,7 @@ fi
 mkdir -p $Folder
 cd $Folder
 
-grim -c - "$Filename"
+grim -c -o "$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')" "$Filename"
 wl-copy < "$Filename"
 
 hyprctl notify 5 2000 0 "Saved Screenshot to Clipboard"
