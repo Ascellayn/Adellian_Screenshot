@@ -35,6 +35,8 @@ This file contains the encoder that wf-recorder should use.
 h264_nvenc
 ```
 
+<br>
+
 ### Default Adellian Keybinds
 ```txt
 PRINT_SCREEN			→	Capture the whole screen
