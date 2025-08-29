@@ -46,7 +46,7 @@ PRINT_SCREEN + SHIFT	→	Capture a region of the screen and record a video. Requ
 ```
 
 #### Hyprland Binds
-```txt
+```bash
 # Screenshot Binds
 bind    =   ,           PRINT,  exec,   /bin/bash -c /System/Applications/Screenshot/Screen.sh
 bind    =   $CTRL,      PRINT,  exec,   /bin/bash -c /System/Applications/Screenshot/Region.sh
