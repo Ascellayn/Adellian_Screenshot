@@ -1,10 +1,13 @@
-<p align="center">
-  <img src="https://github.com/Ascellayn/Adellian/blob/main/Ressources/AdellianBanner-256px.png?raw=true"/>
-</p>
+<a href="https://github.com/Ascellayn/Adellian">
+  <p align="center">
+    <img src="https://github.com/Ascellayn/Adellian/blob/main/Ressources/AdellianBanner-256px.png?raw=true"/>
+  </p>
+</a>
 <h1 align=center>
-  The Screenshot Scripts
+  <a href="https://github.com/Ascellayn/Adellian">
+    The Screenshot Scripts
+  </a>
 </h1>
-
 This repository is an "Adellian Application" designed for Adellian's Hyprllian Branch. These scripts should be pretty universal, with the exception of the scripts being required to be ran inside Hyprland.  
 
 <br>
