@@ -24,12 +24,12 @@ This repository is an "Adellian Application" designed for Adellian's Hyprllian B
 <br>
 
 ## Required Adellian Files
-### /System/Configuration/Adellian/Screenshot_Path.txt
+### `/System/Configuration/Adellian/Screenshot_Path.txt`
 This file contains the absolute path to where Screenshots should be saved.
 ```txt
 ~/Pictures/Screenshots
 ```
-### /System/Configuration/Adellian/Screenshot_Encoder.txt
+### `/System/Configuration/Adellian/Screenshot_Encoder.txt`
 This file contains the encoder that wf-recorder should use.
 ```txt
 h264_nvenc
