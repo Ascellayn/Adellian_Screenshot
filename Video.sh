@@ -27,3 +27,5 @@ echo "file://$(pwd)/$Filename" | wl-copy -t text/uri-list
 
 sleep 1 && read -p "Press ENTER to stop recording."
 kill -INT $PID
+
+hyprctl notify 5 2000 0 "Saved Video to Clipboard"

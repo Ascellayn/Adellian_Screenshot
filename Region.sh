@@ -16,3 +16,5 @@ imv-wayland -w ForceFullscreen - & PID=$!
 slurp | grim -g - "$Filename"
 wl-copy < "$Filename"
 kill $PID
+
+hyprctl notify 5 2000 0 "Saved Region Shot to Clipboard"

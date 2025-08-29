@@ -13,3 +13,6 @@ cd $Folder
 hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' |\
 grim -g -c - "$Filename"
 wl-copy < "$Filename"
+
+
+hyprctl notify 5 2000 0 "Saved Window Shot to Clipboard"

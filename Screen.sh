@@ -12,3 +12,5 @@ cd $Folder
 
 grim -c - "$Filename"
 wl-copy < "$Filename"
+
+hyprctl notify 5 2000 0 "Saved Screenshot to Clipboard"
