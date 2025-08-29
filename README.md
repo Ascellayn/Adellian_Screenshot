@@ -50,5 +50,5 @@ bind    =   ,           PRINT,  exec,   /bin/bash -c /System/Applications/Screen
 bind    =   $CTRL,      PRINT,  exec,   /bin/bash -c /System/Applications/Screenshot/Region.sh
 bind    =   $Alt,       PRINT,  exec,   /bin/bash -c /System/Applications/Screenshot/Window.sh
 bind    =   $Shift,     PRINT,  exec,   $Terminal /System/Applications/Screenshot/Video.sh
-bind    =   $System,    PRINT,  exec,   thunar ~/Pictures/Screenshots/$(date +%Y-%m)
+bind    =   $System,    PRINT,  exec,   thunar $(cat /System/Configuration/Adellian/Screenshot_Path.txt)$(date +%Y-%m)
 ```
