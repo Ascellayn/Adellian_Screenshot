@@ -10,5 +10,20 @@ fi
 mkdir -p $Folder
 cd $Folder
 
-wf-recorder -g "$(slurp)" -a --audio-backend=pipewire -c $(cat /System/Configuration/Adellian/Screenshot_Encoder.txt) -C flac -D -r 60 -f "$Filename"
-echo "file://$(cwd)/$Filename" | wl-copy -t text/uri-list
+PID=$(ps -o ppid= -p $PPID) # Don't ask me why, but I have to leave this line in even though I don't do shit with it or hyprctl doesn't do anything.
+#echo $PPID
+#echo $PID
+
+hyprctl dispatch setfloating pid:$PPID
+hyprctl dispatch resizewindowpixel exact 495 90,pid:$PPID
+hyprctl dispatch movewindowpixel exact 80% 92%,pid:$PPID
+hyprctl dispatch pin pid:$PPID
+
+Geometry=$(slurp)
+wf-recorder -g "$Geometry" -a --audio-backend=pipewire -c $(cat /System/Configuration/Adellian/Screenshot_Encoder.txt) -C flac -D -r 60 -f "$Filename" & PID=$!
+
+
+echo "file://$(pwd)/$Filename" | wl-copy -t text/uri-list
+
+sleep 1 && read -p "Press ENTER to stop recording."
+kill -INT $PID
