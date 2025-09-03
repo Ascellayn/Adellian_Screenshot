@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~
 Folder="$(cat /System/Configuration/Adellian/Screenshot_Path.txt)$(date +%Y-%m)"
-Filename="$(date +%d)@$(date +%H-%M_%S).mkv"
+Filename="$(date +%d)@$(date +%H-%M_%S).mp4"
 
 if [ "${Folder:0:2}" = "~/" ]; then
 	Folder=${Folder:2};
