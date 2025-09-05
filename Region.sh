@@ -19,7 +19,7 @@ if [ -z "$Geometry" ]; then
 	exit
 fi
 
-grim -g $Geometry - "$Filename"
+grim -g "$Geometry" - "$Filename"
 wl-copy < "$Filename"
 kill $PID
 
