@@ -13,7 +13,13 @@ cd $Folder
 grim -c -t ppm -o "$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')" - |\
 imv-wayland -w ForceFullscreen - & PID=$!
 
-slurp | grim -g - "$Filename"
+Geometry=$(slurp)
+if [ -z "$Geometry" ]; then
+	kill $PID
+	exit
+fi
+
+grim -g $Geometry - "$Filename"
 wl-copy < "$Filename"
 kill $PID
 
